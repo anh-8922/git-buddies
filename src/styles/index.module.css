@@ -1,0 +1,100 @@
+.main {
+    background-color: none;
+    color: black;
+    min-height: max-content;
+   
+}
+
+  /****************************/
+ /**********LAYOUT************/
+/****************************/
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.source {
+    position: fixed;
+    left: -6rem;
+    transform: rotate(270deg);
+    bottom: 50%;
+    font-size: 2rem;
+    word-spacing: 1rem;
+}
+
+  /****************************/
+ /***USER LIST COMPONENT******/
+/****************************/
+
+.user {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.allUser {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 45%;
+    font-size: 1.3rem;
+    
+}
+
+.pagination {
+    margin: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.pagination > button {
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.pageNumber {
+    margin-top: 0.5rem;
+}
+
+  /****************************/
+ /*******LOADING SPINNER******/
+/****************************/
+
+.loadingSpinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    font-size: 1.5em;
+  }
+  
+  
+  .loadingSpinner:after {
+    content: '';
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+
+
