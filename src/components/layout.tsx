@@ -19,7 +19,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className={styles.layout} style={{backgroundImage: `url(${bg.src})`, backgroundSize:'cover'}}>
       <Heading />
       <main className={styles.main}>{children}</main>
-      <div className={styles.source}><p className={leckerli.className}>www.anh-dev.com</p></div>
+      <div className={styles.source}><p className={leckerli.className}>anhchau.netlify.app</p></div>
     </div>
   );
 }
